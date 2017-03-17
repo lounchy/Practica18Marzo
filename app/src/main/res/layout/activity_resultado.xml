@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:context="com.example.daini.practica28marzo.Activity.ResultadoActivity">
+
+    <fragment
+        class="com.example.daini.practica28marzo.Fragments.FragmentImaxes"
+        android:id="@+id/fragment_imaxes"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="wrap_content">
+
+    </fragment>
+    <fragment
+        class="com.example.daini.practica28marzo.Fragments.FragmentDetalle"
+        android:id="@+id/fragment_detalle"
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:layout_height="wrap_content">
+
+    </fragment>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.daini.practica28marzo.Activity.MainActivity">
+
+    <TextView
+        android:id="@+id/mi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foto 1 de 10"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/mi_tv"/>
+    <ImageView
+        android:id="@+id/foto_iw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/amor"
+        android:layout_below="@+id/mi_tv"
+        android:padding="16dp"
+        android:layout_above="@+id/sel_layout"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/foto_iw"/>
+
+    <LinearLayout
+        android:id="@+id/sel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_check_black_24dp"
+            android:scaleType="centerInside"
+            android:id="@+id/si"
+            android:padding="16dp"
+
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:id="@+id/no"
+            android:layout_weight="1"
+            android:padding="16dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
